@@ -2,7 +2,7 @@ with
     base as (
 
         select *
-        from {{ ref("dbt_artifacts",'invocations') }}
+        from {{ ref("dbt_artifacts","invocations") }}
 
     )
 

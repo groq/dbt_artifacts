@@ -1,5 +1,5 @@
 with
-    base as (select * from {{ ref("dbt_artifacts",'model_executions') }},
+    base as (select * from {{ ref("dbt_artifacts","model_executions") }},
     enhanced as (
 
         select
